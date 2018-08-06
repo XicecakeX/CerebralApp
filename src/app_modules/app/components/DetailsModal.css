@@ -1,0 +1,114 @@
+.DetailsModal {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: rgba(240, 240, 240, 0.7);
+	z-index: 100;
+}
+.DetailsModal__hidden {
+	position: absolute !important;
+	left: -200% !important;
+	right: 200% !important;
+}
+
+.DetailsModal__Box {
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	height: 700px;
+	width: 60%;
+	max-width: 650px;
+	background-color: #FFF;
+
+	-webkit-box-shadow: 0px 0px 33px 6px rgba(0,0,0,0.20);
+	-moz-box-shadow: 0px 0px 33px 6px rgba(0,0,0,0.20);
+	box-shadow: 0px 0px 33px 6px rgba(0,0,0,0.20);
+}
+
+.DetailsModal__Box-Nav {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 150px;
+	background-color: #5E9CEF;
+	margin: 0;
+	padding: 0;
+}
+.DetailsModal__Box-Nav-Exit {
+	position: absolute;
+	top: 10px;
+	right: 17px;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	color: #000;
+	font-family: arial;
+	font-weight: bold;
+	cursor: pointer;
+	opacity: 0.65;
+}
+.DetailsModal__Box-Nav-Title {
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+	font-weight: 100;
+	color: #FFF;
+	padding-top: 22px;
+	margin-bottom: 10px;
+}
+.DetailsModal__Box-Nav-List {
+	position: relative;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	text-align: center;
+	top: 7px;
+}
+.DetailsModal__Box-Nav-List li {
+	display: inline-block;
+	background-color: rgba(255, 255, 255, 0.40);
+	margin-left: 10px;
+	width: 50px;
+	height: 50px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	cursor: pointer;
+	border: rgba(255, 255, 255, 0) 2px solid;
+}
+.DetailsModal__Box-Nav-List li.Invalid {
+	border: #C82C2C 2px solid;
+	background-color: rgba(242, 153, 172, 0.80);
+}
+.DetailsModal__Box-Nav-List-Icon {
+	position: relative;
+	left: 0px;
+	top: 12px;
+	display: inline-block;
+	content: "";
+	width: 25px;
+	height: 25px;
+	background-size: 25px 25px;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+.DetailsModal__Box-Nav-List-Icon.Selected {
+	opacity: 1;
+}
+.DetailsModal__Box-Nav-List-Icon.Default {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEHRSTlMAECAwQFBgcICPn6+/z9/vIxqCigAAAJ5JREFUeNrNkNEOwyAIRVHXFpEK//+1S2YXdWD6sGTZeTLcE8IV/ohIrLXsy3wTfUGLPIhe7IlnmrDrmwpVJ5pQ+iAWT+A+eOCdEIq9YdrqVdURBIvcCTQK6bA3xGEFBXFaAPcSpJ6QtFFA1Ar9s88A/MFcFcElHojtCMmIm8mzztRk8xmJ2N8Q1UJhaIHqAPy1kPmCFsJAOm2LDD/lCd+9H4kvys4PAAAAAElFTkSuQmCC);
+}
+.DetailsModal__Box-Nav-List li:first-child {
+	margin-left: 0;
+}
+.DetailsModal__Box-Component {
+	position: absolute;
+	top: 150px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}

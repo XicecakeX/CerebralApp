@@ -1,0 +1,79 @@
+.TopBar {
+    height: 44px;
+    border-bottom: 1px solid #ddd;
+    background-color: rgba(247, 247, 247, 1.0);
+}
+.TopBar__Title {
+    line-height: 44px;
+    padding: 0;
+    font-size: 22px;
+    font-weight: 500;
+    color: #444;
+    white-space: nowrap;
+    margin: 0 30px 0 10px;
+}
+.TopBar__Search {
+    margin-top: 8px;
+    height: 28px;
+    width: 60%;
+    max-width: 600px; 
+    font-size: 16px;
+}
+.TopBar__Search .Select-control {
+    padding: 4px 52px 4px 10px; 
+}
+.TopBar__Search .Select-control .Select-placeholder {
+    padding: 4px 52px 10px 10px; 
+}
+.TopBar__Search .Select-control .Select-arrow {
+    top: 11px;
+}
+.TopBar__Search .Select-control .Select-clear {
+    padding: 3px 10px 6px 10px; 
+}
+.TopBar__Search:focus {
+    outline:none;
+    border: 1px solid;
+    border-color: #4285f4;
+    padding: 2px 2px 2px 8px;
+}
+.TopBar__Search-Button {
+    margin-top: 8px;
+    height: 28px;
+    width: 50px;
+    background-color: #4285f4;
+    border-radius: 3px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.TopBar__Icon {
+    position: relative;
+    z-index: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 24px;
+
+    display: inline-block;
+    font-family: Ratchicons;
+    font-size: 24px;
+    line-height: 1;
+    text-decoration: none;
+
+    -webkit-font-smoothing: antialiased;
+    color: #008000;
+}
+
+.TopBar__Pull-Right {
+    float: right;
+}
+.TopBar__Pull-Left {
+    float: left;
+}
+
+.TopBar__Icon.TopBar__Pull-Right {
+    margin-right: 10px;
+}
+.TopBar__Icon.TopBar__Pull-Left {
+    margin-left: 10px;
+}
+

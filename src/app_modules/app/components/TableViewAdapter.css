@@ -1,0 +1,33 @@
+.TableViewAdapter {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+.TableViewAdapter .public_fixedDataTableRow_main {
+	background-color: #fff;
+	user-select: none;
+	cursor: pointer;
+}
+.TableViewAdapter .public_fixedDataTableRow_main:hover:not(.public_fixedDataTable_header) {
+	text-shadow: 0px 0px 1px #999;
+}
+
+.TableViewAdapter .public_fixedDataTableRow_highlighted {
+	background-color: #f4f4f4;
+	user-select: none;
+	cursor: pointer;
+}
+.TableViewAdapter .public_fixedDataTableRow_highlighted:hover {
+	text-shadow: 0px 0px 1px #999;
+}
+
+/* Cells */
+.TableViewAdapter .public_fixedDataTableCell_main {
+	background-color: transparent !important;
+}
+.TableViewAdapter .public_fixedDataTableCell_highlighted {
+	background-color: transparent !important;
+}

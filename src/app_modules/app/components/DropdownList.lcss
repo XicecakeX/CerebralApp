@@ -1,0 +1,7 @@
+.root {
+	font-size: 15px;
+	height: 35px;
+}
+.root  :global(.rw-filter-input) {
+    font-size: 14px;
+}
