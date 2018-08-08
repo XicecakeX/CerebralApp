@@ -1,16 +1,15 @@
 import { Module } from "cerebral";
-
 import mounted from './signals/mounted';
-import textChanged from './signals/textChanged';
-import clearClicked from './signals/clearClicked';
+import buttonClicked from './signals/buttonClicked';
+import viewClicked from './signals/viewClicked';
 
 export default Module({
   state: {
-    message: 'Hello World'
+    id: "",
   },
   signals: {
     mounted,
-    textChanged,
-    clearClicked
+    buttonClicked,
+    viewClicked
   }
 })

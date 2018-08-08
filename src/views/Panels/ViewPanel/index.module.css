@@ -1,0 +1,51 @@
+.button{
+	padding: 5px;
+	width: 100px;
+}
+
+.buttons{
+	margin-top: 10px;
+	text-align: center;
+}
+
+.component{
+	padding: 5px;
+}
+
+.content{
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+.display{
+	display: flex;
+}
+
+.hidden{
+	display: none;
+}
+
+.item{
+	text-align: center;
+	margin-top: 10px;
+	width: 100%;
+}
+
+.options{
+	display: flex;
+}
+
+.panel{
+	background-color: #DDD;
+	display: flex;
+	margin-top: 30px;
+	padding: 10px;
+	width: 100%;
+}
+
+.selectField{
+	padding: 5px;
+	width: 125px;
+}

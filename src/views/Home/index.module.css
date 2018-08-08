@@ -1,8 +1,25 @@
-.root {
+.root{
 	flex-grow: 1;
   display: flex;
 	background: #ddd;
 
 	justify-content: center;
 	align-items: center;
+}
+
+.button{
+	margin: 0 3px;
+	padding: 5px;
+	width: 100px;
+}
+
+.content{
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin-top: 100px;
+}
+
+.options{
+	display: flex;
 }
