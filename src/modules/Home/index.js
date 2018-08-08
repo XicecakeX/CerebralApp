@@ -6,6 +6,7 @@ import viewClicked from './signals/viewClicked';
 export default Module({
   state: {
     id: "",
+    disabled: false
   },
   signals: {
     mounted,

@@ -11,6 +11,7 @@ export default connect({
 	mounted: signal`Home.mounted`,
 	buttonClicked: signal`Home.buttonClicked`,
 	viewClicked: signal`Home.viewClicked`,
+	disabled: state`Home.disabled`,
 	id: state`Home.id`,
 }, class Home extends React.Component{
 
@@ -33,7 +34,8 @@ export default connect({
 			return (<DeletePanel />);
 		}else if(id === "btnView"){
 			//Returning view panel
-			return (<ViewPanel handleClick = {(option, value) => {this.props.viewClicked({option: option, value: value})}}/>);
+			return (<ViewPanel disabled = {this.props.disabled}
+								handleClick = {(option, value) => {this.props.viewClicked({option: option, value: value})}}/>);
 		}
 	}
 

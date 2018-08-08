@@ -36,6 +36,7 @@ export default class ViewPanel extends React.Component{
             <select value = {this.state.option}
               className = {S.selectField}
               id = "selViewOptions"
+              disabled = {this.props.disabled}
               onChange = {(event) => {this.setState({display: "display", option: event.target.value})}}>
               <option hidden disabled value = "Choose Option"> Choose Option</option>
               <option value = "Index"> Index</option>
@@ -49,6 +50,7 @@ export default class ViewPanel extends React.Component{
                 value = {this.state.search}
                 className = {S.component}
                 id = "txtSearch"
+                disabled = {this.props.disabled}
                 onChange = {(event) => {this.setState({search: event.target.value})}}/>
             </div>
           </div>
@@ -57,7 +59,7 @@ export default class ViewPanel extends React.Component{
               value = "Search"
               className = {S.button}
               id = "btnSearch"
-              disabled = {this.checkEmpty()}
+              disabled = {this.props.disabled}
               onClick = {() => {this.props.handleClick(this.state.option, this.state.search)}}/>
           </div>
         </div>
