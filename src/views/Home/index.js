@@ -53,7 +53,7 @@ export default connect({
 				<AddPanel p = {this.props.addProps}/>
 				<DeletePanel p = {this.props.deleteProps}/>
 				<ViewPanel p = {this.props.viewProps}
-					selectAsset = {(data) => {this.props.assetSelected({data: data})}}
+					selectAsset = {(data, value) => {this.props.assetSelected({data: data, value: value})}}
 					setInput = {(id, value) => {this.props.inputUpdated({id: id, value: value})}}
 					handleClick = {(option, value) => {this.props.viewClicked({option: option, value: value})}}/>
 			</div>

@@ -73,9 +73,9 @@ export default class ViewPanel extends React.Component{
           <select value = {p.assetOption}
             className = {S.selectField2}
             id = "selViewAssets"
-            onChange = {(e) => {this.props.selectAsset(p.viewData[e.target.selectedIndex - 1])}}>
+            onChange = {(e) => {this.props.selectAsset(p.data[e.target.selectedIndex - 1], e.target.value)}}>
             <option hidden disabled value = "Choose Asset"> Choose Asset</option>
-            {this.generateOptions(p.viewData)}
+            {this.generateOptions(p.data)}
           </select>
         </div>
           <div className = {ClassNames(S[p.displayField], S.item)}>

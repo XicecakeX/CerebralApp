@@ -17,7 +17,7 @@ function viewData({state, props}){
       state.set('Home.viewProps.displayField', "display");
     }else{
       //Setting state
-      state.set('Home.data', res.data[1]);
+      state.set('Home.viewProps.data', res.data[1]);
       state.set('Home.viewProps.displaySelect', "display");
     }
 
@@ -25,6 +25,7 @@ function viewData({state, props}){
     state.set('Home.disabled', false);
     state.set('Home.viewProps.disabled', false);
     state.set('Home.viewProps.viewData', res.data[1]);
+
   }).catch((error) => {
     //Checking error
     if(error.response.status === 404){
