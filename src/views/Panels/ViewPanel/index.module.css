@@ -3,20 +3,16 @@
 	width: 100px;
 }
 
-.buttons{
-	margin-top: 10px;
-	text-align: center;
-}
-
 .component{
+	display: flex;
 	padding: 5px;
 }
 
 .content{
-	align-items: center;
 	display: flex;
 	flex-direction: column;
-	margin: 0 auto;
+	align-items: center;
+	width: 100%;
 }
 
 .display{
@@ -28,9 +24,15 @@
 }
 
 .item{
-	text-align: center;
+	align-items: center;
+	justify-content: center;
 	margin-top: 10px;
 	width: 100%;
+}
+
+.label{
+	display: flex;
+	padding: 6px;
 }
 
 .options{
@@ -39,13 +41,16 @@
 
 .panel{
 	background-color: #DDD;
-	display: flex;
 	margin-top: 30px;
 	padding: 10px;
 	width: 100%;
 }
 
-.selectField{
+.selectField1{
 	padding: 5px;
 	width: 125px;
+}
+
+.selectField2{
+	padding: 5px;
 }

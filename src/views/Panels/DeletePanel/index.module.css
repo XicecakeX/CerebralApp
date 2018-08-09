@@ -1,6 +1,13 @@
+.display{
+	display: flex;
+}
+
+.hidden{
+	display: none;
+}
+
 .panel{
 	background-color: #DDD;
-	display: flex;
 	margin-top: 30px;
 	width: 100%;
 }

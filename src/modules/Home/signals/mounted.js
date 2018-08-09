@@ -1,3 +1,2 @@
-export default [
-  
-];
+/**Exporting Signal*/
+export default[];

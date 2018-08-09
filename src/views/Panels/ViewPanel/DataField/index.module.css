@@ -1,0 +1,36 @@
+.column{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+.content{
+	display: flex;
+	width: 100%;
+}
+
+.data{
+	display: flex;
+	padding-left: 10px;
+	width: 70%;
+}
+
+.fieldset{
+	border: 2px solid black;
+	border-radius: 10px;
+	margin-top: 30px;
+	width: 900px;
+}
+
+.item{
+	display: flex;
+	padding: 8px;
+	width: 100%;
+}
+
+.label{
+	display: flex;
+	font-weight: bold;
+	justify-content: flex-end;
+	width: 30%;
+}
